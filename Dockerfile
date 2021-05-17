@@ -8,3 +8,8 @@ COPY tmp.tar /root/
 ADD tmp.tar /root/tmp
 ## ADD extruct and and those file/folder in container
 
+ADD script1.sh script2.sh /tmp/
+
+##CMD used to execute process, if any arg passed at containr runtime then arg will ge executed
+CMD ["/bin/bash", "/tmp/script1.sh"]
+
