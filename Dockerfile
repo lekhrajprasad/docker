@@ -11,5 +11,6 @@ ADD tmp.tar /root/tmp
 ADD script1.sh script2.sh /tmp/
 
 ##CMD used to execute process, if any arg passed at containr runtime then arg will ge executed
-CMD ["/bin/bash", "/tmp/script1.sh"]
-
+#CMD ["/bin/bash", "/tmp/script1.sh"]
+ENTRYPOINT ["/bin/bash", "/tmp/script1.sh"]
+#entrypoint do not allow to ovveride the execution command
