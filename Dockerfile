@@ -14,3 +14,5 @@ ADD script1.sh script2.sh /tmp/
 #CMD ["/bin/bash", "/tmp/script1.sh"]
 ENTRYPOINT ["/bin/bash", "/tmp/script1.sh"]
 #entrypoint do not allow to ovveride the execution command
+
+
